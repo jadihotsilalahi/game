@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #64e40f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #moving-text {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0ffd1b;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <marquee id="moving-text" behavior="scroll" direction="left" scrollamount="7">
+            LOGIN AKUN ANDA DAN BERMAIN GAME MATEMATIKA
+        </marquee>
+    </div>
+
+    <div class="login-container">
+        <h1>LOGIN</h1>
+        <form id="login-form">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Email" required>
+        
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span class="password-toggle" onclick="togglePassword()">👁️</span>
+            </div>
+            <button>
+                <a href="http://127.0.0.1:3000/game.html">LOGIN</a>
+            </button>
+        </form>
+
+        <script>
+            // Your JavaScript functions remain unchanged
+        </script>
+    </div>
+</body>
+</html>
